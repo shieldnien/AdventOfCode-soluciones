@@ -1016,7 +1016,7 @@ ninep2fourf
 fiveeight2zxjpzffvdsevenjhjvjfiveone
 15737seven
 pdrss6oneone4fournine
-7b`
+7b`;
 
 // Separa el string por cada salto de linea, lo almacena en un array
 const arrayStr = string.split("\n")
@@ -1037,8 +1037,8 @@ const arrValues = getValue1stnLast(arrParsedCoincidencias)
 // Suma todos los valores del array de strings
 const arrFinal = getSumOfAll(arrValues)
 
-// test
-console.table(arrFinal)
+// [¡TEST!] Descomentar para probar el resultado
+// console.table(arrFinal)
 
 function getCoincidences(arr, reg) {
     return arr.map((element) => {
@@ -1066,11 +1066,10 @@ function getValue1stnLast(arr) {
 function getSumOfAll(arr) {
     let initialVal = 0;
     for(let i=0; i<arr.length;i++) {
-        // test resultado
-            console.log(
+    // [¡TEST!] Descomentar para probar el resultado
+        console.log(
                 'IT nº'+(i+1)+': ' +
                 initialVal + ' + ' + arr[i] + ' = '+ parseInt(initialVal + arr[i]));
-        // test debug BORRARRRRRRRRRRRRRRRRR! LOURDESSSS
         initialVal += arr[i];
     }
     return initialVal;
